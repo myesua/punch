@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Alegreya, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif, "Times New Roman", Times, serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #4a4a4a;
+}
+
+.top-panel {
+	background-color: #000000;
+	padding: 10px 0;
+}
+
+.top-panel > div {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.top-panel > div > a {
+	color: #ffffff;
+	font-size: 14px;
+	padding: 0 8px;
+}
+
+.top-panel > div > a:first-child {
+	border-right: 1px solid #ffffff;
+}
+
+.top-actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.top-actions > ul {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.logo-container {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.logo-container > small {
+	maring-left: 10px;
+}
+
+.top-action-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.top-action-buttons button {
+	background-color: #ff0000;
+	border: none;
+}
+
+.search-icon-container {
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+}
+
+.youtube-icon-container {
+	border-radius: 20px;
+	padding: 7px 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	gap: 10px;
+}
+
+.top-links {
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+}
+
+.top-links ul {
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 600;
+}
+
+/* Main content */
+
+main {
+	margin: 2rem auto;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 5% 3% 64% 6% 21%;
+	text-align: justify;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+main > article > img,
+main > aside:last-child > img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+}
+
+.news-date {
+	text-align: left;
+	display: inline-block;
+	width: fit-content;
+}
+
+.reporters {
+	padding: 0 5px;
+	border-left: 3px solid red;
+}
+
+blockquote {
+	margin: 0;
+	padding: 5px 15px;
+	border-left: 3px solid red;
+}
+
+blockquote h2 {
+	margin-left: 12px;
+}
+
+blockquote > ul {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	list-style-type: disc;
+	margin: 1rem;
+}
+
+.right-content {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+
+.download-e-copy {
+	background-color: #ff0000;
+	border-radius: 12px;
+	padding: 7px 20px;
+	width: 70%;
+}
